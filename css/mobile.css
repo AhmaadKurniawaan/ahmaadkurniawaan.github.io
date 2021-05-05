@@ -1,0 +1,121 @@
+@media (max-width: 600px) {
+    .navbar {
+      padding: 0;
+    }
+    .navbar .navbar-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .navbar .navbar-btn label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .navbar .navbar-btn label:hover,
+    .navbar #navbar-check:checked ~ .navbar-btn label {
+      background-color: #4339f2;
+      border-top: 2px solid #fff;
+    }
+    .navbar .navbar-btn label span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #000;
+    }
+    .navbar .navbar-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .navbar .navbar-links a {
+      display: block;
+      width: 100%;
+    }
+    .navbar #navbar-check:not(:checked) ~ .navbar-links {
+      height: 0px;
+    }
+    .navbar #navbar-check:checked ~ .navbar-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+@media (max-width: 600px) {
+
+    .col-5{
+        width: 100%;
+    }
+    .container-core {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .card{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+  
+    .desc .col-md-100{
+      width: 100%;
+    }
+  
+    .container-blogs {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .card-blogs{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        
+      }
+      .content{
+        display: none;
+      }
+  
+      .container-box {
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 30px;
+      }
+      .container-items {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: auto;
+        flex-direction: column;
+      }
+      .card-items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        
+    }
+  }
